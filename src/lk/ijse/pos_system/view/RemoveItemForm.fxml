@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RemoveItemContext" prefHeight="577.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.RemoveItemFormController">
+   <children>
+      <Label layoutX="316.0" layoutY="21.0" text="Remove Item">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Separator layoutX="52.0" layoutY="63.0" prefHeight="4.0" prefWidth="766.0" />
+      <TextField fx:id="txtCode" layoutX="435.0" layoutY="111.0" onAction="#searchOnAction" prefHeight="26.0" prefWidth="222.0" />
+      <Label layoutX="74.0" layoutY="114.0" text="Please Enter the Code You Want to Delete :-">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescription" layoutX="374.0" layoutY="192.0" prefHeight="26.0" prefWidth="222.0" />
+      <Label layoutX="244.0" layoutY="199.0" text="Discription :-">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="268.0" text="Pack Size :-">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="340.0" text="Unit Price :-">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="417.0" text="QTY On Hand :-">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPackSize" layoutX="376.0" layoutY="264.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtUnitPrice" layoutX="374.0" layoutY="337.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtQTYonhand" layoutX="375.0" layoutY="412.0" prefHeight="26.0" prefWidth="222.0" />
+      <JFXButton layoutX="612.0" layoutY="485.0" onAction="#removeOnAction" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: #d40000;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

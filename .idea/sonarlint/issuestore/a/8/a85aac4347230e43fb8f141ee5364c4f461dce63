@@ -1,0 +1,25 @@
+
+H
+java:S1172D"2Remove this unused method parameter "actionEvent".(‹‡ÿƒ
+b
+java:S1128"LRemove this unused import 'lk.ijse.pos_system.bo.custom.CashierDashboardBO'.(¡…’
+`
+java:S1128	"ERemove this unused import 'lk.ijse.pos_system.bo.custom.MakeOrderBO'.(Ö†Ÿ·ûÿÿÿÿ
+p
+java:S1128"URemove this unused import 'lk.ijse.pos_system.bo.custom.impl.CashierDashboardBOImpl'.(öâÊÒÿÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+t
+java:S1104"YMake cmdCustomerID a static final constant or non-public and provide accessors if needed.(ñÚ„éùÿÿÿÿ
+n
+java:S1104"SMake txtName a static final constant or non-public and provide accessors if needed.(¨äİìÿÿÿÿÿ
+i
+java:S1104"TMake txtTitle a static final constant or non-public and provide accessors if needed.(çØÇ#
+q
+java:S1104"VMake txtAddress a static final constant or non-public and provide accessors if needed.(©ûîùıÿÿÿÿ
+i
+java:S1104"SMake txtCity a static final constant or non-public and provide accessors if needed.(Õ•÷
+m
+java:S1104"WMake txtProvince a static final constant or non-public and provide accessors if needed.(€×¡î
+r
+java:S1104"WMake txtPostCode a static final constant or non-public and provide accessors if needed.(£èÀ®ıÿÿÿÿ

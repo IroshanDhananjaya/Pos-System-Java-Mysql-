@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="modifiOrderContext" prefHeight="577.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.ModifiOrderFormController">
+   <children>
+      <Label layoutX="326.0" layoutY="32.0" text="Modifi Order">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="113.0" text="Enter the Order ID that needs to be Updated :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderID" layoutX="530.0" layoutY="111.0" onAction="#searchOrderDetaisOnAction" />
+      <JFXTextField fx:id="txtItemCode" editable="false" layoutX="280.0" layoutY="187.0" prefHeight="26.0" prefWidth="342.0" />
+      <Label layoutX="156.0" layoutY="189.0" text="Item Code :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderQty" layoutX="280.0" layoutY="305.0" prefHeight="26.0" prefWidth="342.0" />
+      <Label layoutX="156.0" layoutY="307.0" text="Order QTY :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDiscount" layoutX="280.0" layoutY="412.0" prefHeight="26.0" prefWidth="342.0" />
+      <Label layoutX="156.0" layoutY="414.0" text="Dicount ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="565.0" layoutY="504.0" onAction="#comfirmOnAction" prefHeight="46.0" prefWidth="214.0" style="-fx-background-color: #63b047;" text="Comfirm">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

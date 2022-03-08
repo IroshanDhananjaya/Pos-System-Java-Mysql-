@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.OrderAndOrderDetailsTableFormController">
+   <children>
+      <TableView fx:id="tblOrder" layoutX="16.0" layoutY="121.0" prefHeight="441.0" prefWidth="814.0">
+        <columns>
+            <TableColumn fx:id="colOrderTemp" prefWidth="271.0" text="OrderID" />
+          <TableColumn fx:id="colOrderDate" prefWidth="271.0" text="Order Date" />
+            <TableColumn fx:id="colCustId" prefWidth="271.0" text="Customer Id" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbSelectTable" layoutX="42.0" layoutY="58.0" onAction="#selectTabelOnAction" prefHeight="26.0" prefWidth="247.0" />
+      <TableView fx:id="tblOrderDetails" layoutX="21.0" layoutY="147.0" prefHeight="408.0" prefWidth="805.0" visible="false">
+        <columns>
+          <TableColumn fx:id="colOrderID2" prefWidth="161.0" text="Order ID" />
+          <TableColumn fx:id="colItemCode2" prefWidth="161.0" text="Item Code" />
+            <TableColumn fx:id="colQTY" prefWidth="161.0" text="Order QTY" />
+            <TableColumn fx:id="colDisCount" prefWidth="161.0" text="Discount" />
+            <TableColumn fx:id="colPrice" prefWidth="161.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

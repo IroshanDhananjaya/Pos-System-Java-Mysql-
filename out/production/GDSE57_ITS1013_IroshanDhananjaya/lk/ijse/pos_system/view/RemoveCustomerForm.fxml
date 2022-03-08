@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="577.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.RemoveCustomerFormController">
+   <children>
+      <Label layoutX="237.0" layoutY="24.0" prefHeight="40.0" prefWidth="367.0" text="Remove Customer">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutX="61.0" layoutY="83.0" prefHeight="0.0" prefWidth="757.0" />
+      <JFXComboBox fx:id="cmdCustomerID" labelFloat="true" layoutX="211.0" layoutY="104.0" prefHeight="26.0" prefWidth="395.0" promptText="Select Customer ID" unFocusColor="#e81b1b" />
+      <Label layoutX="187.0" layoutY="206.0" prefHeight="40.0" prefWidth="90.0" text="Name :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="146.0" prefHeight="40.0" prefWidth="90.0" text="Title :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="266.0" prefHeight="40.0" prefWidth="90.0" text="Address:-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="318.0" prefHeight="40.0" prefWidth="90.0" text="City :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="370.0" prefHeight="40.0" prefWidth="113.0" text="Province :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="423.0" prefHeight="40.0" prefWidth="113.0" text="Post Code :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="271.0" layoutY="213.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXTextField fx:id="txtTitle" layoutX="261.0" layoutY="153.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="271.0" layoutY="273.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXTextField fx:id="txtCity" layoutX="271.0" layoutY="325.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXTextField fx:id="txtProvince" layoutX="271.0" layoutY="377.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXTextField fx:id="txtPostCode" layoutX="271.0" layoutY="430.0" prefHeight="26.0" prefWidth="339.0" />
+      <JFXButton layoutX="512.0" layoutY="498.0" onAction="#removeCustomerOnAction" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #bf0000;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

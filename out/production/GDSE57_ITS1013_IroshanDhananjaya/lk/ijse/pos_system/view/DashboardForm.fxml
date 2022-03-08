@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DasgboardContext" prefHeight="658.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="392.0" fitWidth="438.0" layoutX="4.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="653.0428161621094">
+         <image>
+            <Image url="@../assets/—Pngtree—supermarket%20shelves%20vector_2677257.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="433.0" prefHeight="659.0" prefWidth="658.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="646.0" fitWidth="580.0" layoutX="39.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/WhatsApp%20Image%202021-08-15%20at%2020.51.00.jpeg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="114.0" layoutY="403.0" onAction="#adminLogInOnAction" prefHeight="81.0" prefWidth="434.0" style="-fx-background-color: #550000;" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="120.0" layoutY="533.0" onAction="#cashierLoginOnAction" prefHeight="89.0" prefWidth="434.0" style="-fx-background-color: #19551d;" text="CASHIER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane fx:id="AdminLoginSlider" focusTraversable="true" layoutX="-118.0" layoutY="243.0" prefHeight="359.0" prefWidth="618.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label layoutX="215.0" layoutY="29.0" text="Admin Login">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtadminUserName" labelFloat="true" layoutX="41.0" layoutY="103.0" prefHeight="26.0" prefWidth="533.0" promptText="User Name" />
+                  <JFXPasswordField fx:id="txtAdminPassword" labelFloat="true" layoutX="41.0" layoutY="184.0" prefHeight="26.0" prefWidth="533.0" promptText="Password" />
+                  <Label fx:id="lblInvalidPassword" layoutX="155.0" layoutY="223.0" text="Your Password or User Name Invalid" textFill="#d70707" visible="false">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="41.0" layoutY="266.0" onAction="#adminLoginOnAction" prefHeight="26.0" prefWidth="533.0" style="-fx-background-color: #317cd8;" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="15.0" prefHeight="58.0" prefWidth="1091.0" style="-fx-background-color: #0e0a75;" AnchorPane.bottomAnchor="601.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="LblloginClose" layoutX="79.0" layoutY="504.0" prefHeight="77.0" prefWidth="157.0" text="&lt; &lt; BACK" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="CashierSlider1" focusTraversable="true" layoutX="317.0" layoutY="246.0" prefHeight="353.0" prefWidth="613.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="215.0" layoutY="29.0" text="Cashier Login">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txxCashierUserName" labelFloat="true" layoutX="41.0" layoutY="103.0" prefHeight="26.0" prefWidth="533.0" promptText="User Name" />
+            <JFXPasswordField fx:id="txtCashierPassword" labelFloat="true" layoutX="41.0" layoutY="184.0" prefHeight="26.0" prefWidth="533.0" promptText="Password" />
+            <JFXButton layoutX="41.0" layoutY="266.0" onAction="#CasgierLoginOnAction" prefHeight="26.0" prefWidth="533.0" style="-fx-background-color: #317cd8;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblInvalidPassword" layoutX="175.0" layoutY="223.0" text="Your Password or User Name Invalid" textFill="#d70707" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

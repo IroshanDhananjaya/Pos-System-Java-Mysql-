@@ -1,0 +1,19 @@
+
+m	java:S116"SRename this field "ItemCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â¦Ç¬øÿÿÿÿ
+M
+java:S1172"2Remove this unused method parameter "actionEvent".(Úí¢ëùÿÿÿÿ
+H
+java:S1172'"2Remove this unused method parameter "actionEvent".(ÌØÝÛ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(ûÏ„ê
+U
+java:S1128"?Remove this unused import 'lk.ijse.pos_system.DB.DbConnection'.(…õÔ“
+R
+java:S1128"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ
+D
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw
+q
+java:S1104"VMake txtOrderId a static final constant or non-public and provide accessors if needed.(ŠÏ”»øÿÿÿÿ
+h
+java:S1104"SMake txtDate a static final constant or non-public and provide accessors if needed.(Óâ½6
+p
+java:S1104"UMake txtCustID a static final constant or non-public and provide accessors if needed.(œ Èëøÿÿÿÿ

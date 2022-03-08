@@ -1,0 +1,8 @@
+
+L
+java:S1128"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:
+W
+java:S1128"<Remove this unused import 'lk.ijse.pos_system.entity.Order'.(ë’ããþÿÿÿÿ
+X
+java:S1128"BRemove this unused import 'lk.ijse.pos_system.view.TM.CustomerTM'.(¹›’ù
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©‘äŸ
